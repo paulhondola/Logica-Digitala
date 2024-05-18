@@ -50,5 +50,6 @@ always @(posedge clk) begin
         READY: out = 1'b1;
         default: out = 1'b0; // Default case to avoid latches
     endcase
+end
 
 endmodule
