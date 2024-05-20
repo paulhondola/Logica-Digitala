@@ -3,6 +3,8 @@ module fsm_tb;
 reg clk, rst, in;
 wire out;
 
+
+
 initial begin
     rst = 1;
     clk = 1;
@@ -13,6 +15,8 @@ initial begin
 
     #50;
 end
+
+always forever #10 clk = ~clk;
 
 initial begin
     #10
@@ -51,6 +55,6 @@ initial begin
 
 end
 
-always forever #10 clk = ~clk;
+
 
 endmodule

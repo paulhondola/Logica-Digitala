@@ -29,7 +29,7 @@ always @(*) begin
         S2: state_next = (in) ? S2 : S3;
         S3: state_next = (in) ? S4 : S0;
         S4: state_next = S0;
-        default: 
+        default: state_next = S0;
     endcase
 end
 
